@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea43b736.css",
+    "main.js": "/static/js/main.edddb7d3.js",
+    "static/js/453.4140690c.chunk.js": "/static/js/453.4140690c.chunk.js",
+    "static/media/sproutingsystem.png": "/static/media/sproutingsystem.12e1a1529bdb75206e41.png",
+    "static/media/about-bg.png": "/static/media/about-bg.30940dd227b670b5d4a1.png",
+    "static/media/pellets.png": "/static/media/pellets.9576bf54a88f1d01d087.png",
+    "static/media/fod-1.png": "/static/media/fod-1.25f04d56ed99e7041aaf.png",
+    "static/media/foddersystem.png": "/static/media/foddersystem.57092ba5b6a604700b6a.png",
+    "static/media/image_2.png": "/static/media/image_2.cd35429b0a1f31061808.png",
+    "static/media/bales.png": "/static/media/bales.57802f65881976ae3a55.png",
+    "static/media/image_3.png": "/static/media/image_3.e18bb67daef4f51dbcff.png",
+    "static/media/image_1.png": "/static/media/image_1.ea909b84afdfe1cb9522.png",
+    "static/media/horse.png": "/static/media/horse.5e0bdc2a6d62471ce404.png",
+    "static/media/fodder.jpeg": "/static/media/fodder.1eacf6fcaf5aff1e94c5.jpeg",
+    "static/media/coming.png": "/static/media/coming.0e92749d5ba93e7c18a9.png",
+    "static/media/logo.svg": "/static/media/logo.e1bbcd86786c4eee6a44c54a6b3187c8.svg",
+    "index.html": "/index.html",
+    "main.ea43b736.css.map": "/static/css/main.ea43b736.css.map",
+    "main.edddb7d3.js.map": "/static/js/main.edddb7d3.js.map",
+    "453.4140690c.chunk.js.map": "/static/js/453.4140690c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea43b736.css",
+    "static/js/main.edddb7d3.js"
+  ]
+}
