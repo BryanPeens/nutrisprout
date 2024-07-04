@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Connect With Us</h2>
             <ul>
-              <li>Email: info@nutrisprout.com</li>
+              <li>Email: nutrisproutfeeds@gmail.com</li>
               <li>Phone: +1 (123) 456-7890</li>
               <li>
                 <a href="#" className="hover:text-green-500">Facebook</a>
