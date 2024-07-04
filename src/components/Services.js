@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import freshFodderImage from "../assets/images/fodder.jpeg";
 import sproutPelletsImage from "../assets/images/pellets.png";
 import sproutingSystemsImage from "../assets/images/foddersystem.png";
@@ -29,6 +29,11 @@ const services = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="py-20 bg-gray-50 text-center">
       <div className="container mx-auto px-4">

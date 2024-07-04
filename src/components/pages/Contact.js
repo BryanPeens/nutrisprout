@@ -31,6 +31,8 @@ const Contact = () => {
 
   // Automatically change image every 5 seconds
   useEffect(() => {
+        // Scroll to the top when the component mounts
+        window.scrollTo(0, 0);
     const interval = setInterval(changeImage, 5000);
     return () => clearInterval(interval);
   }, []);

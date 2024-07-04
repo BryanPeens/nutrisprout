@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white shadow-md rounded-lg">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy and Disclaimer Statement</h1>

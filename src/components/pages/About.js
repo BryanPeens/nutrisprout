@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import about_bg from "../../assets/images/about-bg.png";
 import pellet_bg from "../../assets/images/pellets.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
+
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-gray-100 min-h-screen">
       <header
