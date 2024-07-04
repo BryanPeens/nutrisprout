@@ -148,7 +148,6 @@ const ProductCard = ({ product, handleDetailsClick }) => (
   </motion.div>
 );
 
-
 const ProductCardAlternate = ({ product, handleDetailsClick }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
@@ -194,7 +193,6 @@ const ProductCardAlternate = ({ product, handleDetailsClick }) => (
   </motion.div>
 );
 
-
 const SingleProductCard = ({ product, handleDetailsClick }) => (
   <motion.div
     className="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105 hover:cursor-pointer mb-8"
@@ -221,13 +219,10 @@ const SingleProductCard = ({ product, handleDetailsClick }) => (
         </p>
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <span className="text-white font-bold text-base sm:text-lg mb-2 sm:mb-0">
-            {product.price}
           </span>
           <button
-            className="skeuomorphic-button-orange flex space-x-2 px-4 py-2 items-center justify-center w-full sm:w-auto"
-            onClick={() => handleDetailsClick(product)}
-          >
-            <span className="text-center">Details</span>
+            className="skeuomorphic-button-orange flex space-x-2 px-4 py-2 items-center justify-center w-full sm:w-auto" >
+            <span className="text-center">Coming Soon</span>
             <motion.div
               whileHover={{ scale: 1.2, color: "#9ccf8f" }} // Gold color
               transition={{ type: "spring", stiffness: 300 }}

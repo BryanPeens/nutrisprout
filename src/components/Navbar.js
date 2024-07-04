@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Sign In and Sign Up Links */}
+        {/* Sign In Link */}
         <div className={`hidden lg:flex lg:items-center lg:space-x-4 ${isOpen ? "hidden" : ""}`}>
           <Link
             className="py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200 transform hover:scale-105"
@@ -71,13 +71,6 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Sign In
-          </Link>
-          <Link
-            className="py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 transform hover:scale-105"
-            to="/signup"
-            onClick={closeMenu}
-          >
-            Sign Up
           </Link>
         </div>
       </nav>
@@ -126,7 +119,7 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* Mobile Menu Sign In and Sign Up */}
+            {/* Mobile Menu Sign In */}
             <div className="mt-auto">
               <div className="pt-6">
                 <Link
@@ -135,13 +128,6 @@ const Navbar = () => {
                   onClick={closeMenu}
                 >
                   Sign In
-                </Link>
-                <Link
-                  className="block px-4 py-3 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl transition duration-200 transform hover:scale-105"
-                  to="/signup"
-                  onClick={closeMenu}
-                >
-                  Sign Up
                 </Link>
               </div>
               {/* Copyright */}

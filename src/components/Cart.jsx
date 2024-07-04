@@ -12,14 +12,16 @@ const Cart = () => {
   const [error, setError] = useState(null); // Error state for handling errors during checkout
 
   // Determine API URL based on environment
-  const apiUrl = process.env.NODE_ENV === 'production' 
-    ? process.env.REACT_APP_API_URL_PROD 
-    : process.env.REACT_APP_API_URL;
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.REACT_APP_API_URL_PROD
+      : process.env.REACT_APP_API_URL;
 
   // Fetch cart items from localStorage on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
-    const storedCartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+    const storedCartProducts =
+      JSON.parse(localStorage.getItem("cartProducts")) || [];
     setCartProducts(storedCartProducts);
   }, []);
 
@@ -62,22 +64,21 @@ const Cart = () => {
           product_data: {
             name: product.name,
           },
-          unit_amount: parseFloat(product.pricePerProduct.replace("$", "")) * 100,
+          unit_amount: Math.round(
+            parseFloat(product.pricePerProduct.replace("$", "")) * 100
+          ),
         },
         quantity: product.quantity,
       }));
 
       // Create a checkout session on the server
-      const response = await fetch(
-        `${apiUrl}/create-checkout-session`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ lineItems }),
-        }
-      );
+      const response = await fetch(`${apiUrl}/create-checkout-session`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ lineItems }),
+      });
 
       if (!response.ok) {
         const errorMessage = await response.text();
@@ -109,14 +110,19 @@ const Cart = () => {
         <div className="space-y-4">
           {/* Render each product in the cart */}
           {cartProducts.map((product, index) => (
-            <div key={index} className="relative bg-white p-4 rounded-lg shadow-lg">
+            <div
+              key={index}
+              className="relative bg-white p-4 rounded-lg shadow-lg"
+            >
               <div className="flex justify-between items-center">
                 <div>
                   <h2 className="text-xl font-semibold">{product.name}</h2>
                   <p className="text-gray-500">
                     Size: {product.selectedSizeLabel}
                   </p>
-                  <p className="text-gray-500">Item Price: {product.pricePerProduct}</p>
+                  <p className="text-gray-500">
+                    Item Price: {product.pricePerProduct}
+                  </p>
                   <p className="text-gray-500">Quantity: {product.quantity}</p>
                 </div>
                 <p className="text-xl font-bold">${product.finalPrice}</p>
