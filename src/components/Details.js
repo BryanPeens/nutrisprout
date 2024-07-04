@@ -124,7 +124,7 @@ const handleAddToCart = useCallback(() => {
           />
           {/* Display selected size label */}
           {selectedSizeLabel && (
-            <div className="absolute top-2 left-2 bg-white px-2 py-1 rounded-lg shadow-md">
+            <div className="absolute top-[80%] left-4 bg-white px-2 py-1 rounded-lg shadow-md">
               <span className="text-gray-800 font-semibold">
                 {selectedSizeLabel}
               </span>
